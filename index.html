@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>命令書</title>
+    <style>
+        textarea {
+            display: block;
+            width: 500px;
+            height: 100px;
+        }
+
+        #result {
+            white-space: pre-wrap;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <label for="instructions"># 命令書</label>
+    <textarea id="instructions"></textarea>
+    <label for="constraints">制約条件</label>
+    <textarea id="constraints"></textarea>
+    <label for="specifications">仕様</label>
+    <textarea id="specifications"></textarea>
+    <button id="combine">結合する</button>
+    <div id="result"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -12,6 +12,6 @@ combineButton.addEventListener('click', () => {
   const constraints = constraintsTitle + constraintsTextarea.value.split('\n').join('\n- ') + '\n';
   const specifications = specificationsTitle + specificationsTextarea.value.split('\n').join('\n- ') + '\n';
   const combinedText = instructions + constraints + specifications;
-  resultDiv.textContent = combinedText;
+  resultDiv.textContent = combinedText + '\nこのタスクで最高の結果を出すために必要な情報が足りない場合は、繰り返し質問してください。' ;
   navigator.clipboard.writeText(combinedText);
 });
